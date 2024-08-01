@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação</title>
+    <link rel="shortcut icon" href="imagens/icone-alphonse.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagens/logo-ds.png">
+        <h1>Linguagens de Programação</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="info.html">Informações</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulário</h2>
+            <form action="">
+                <div class="formulario_campos">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="form_nome" name="form_nome" placeholder="Digite seu nome aqui..." required>
+                </div>
+                <div class="formulario_campos">
+                    <label for="">Email:</label>
+                    <input type="email" name="form_email" id="form_email" placeholder="exemplo@email.com">
+                </div>
+                <div class="formulario_campos">
+                    <label for="form_celular">Celuluar:</label>
+                    <input type="tel" name="form_celular" id="form_celular" placeholder="(xx) x xxxx-xxxx">
+                </div>
+                <label for="formulario_mensagem" class="formulario_mensagem">Mensagem:</label>
+                <textarea name="formulario_mensagem" id="formulario_mensagem" placeholder="Digite a sua mensagem aqui..." cols="50"
+                rows="5"></textarea>
+                <fieldset class="formulario_grupos">
+                    <legend> O que você deseja estudar? </legend>
+                    <label for="formulario_linguagem_C"><input type="radio" name="formulario_linguagem" id="formulario_linguagem_C">C</label>
+                    <label for="formulario_linguagem_Cpp"><input type="radio" name="formulario_linguagem" id="formulario_linguagem_Cpp">C++</label>
+                    <label for="formulario_linguagem_Java"><input type="radio" name="formulario_linguagem" id="formulario_linguagem_Java" checked>Java</label>
+                    <label for="formulario_linguagem_Python"><input type="radio" name="formulario_linguagem" id="formulario_linguagem_Python">
+                    Python</label>
+                    <label for="formulario_linguagem_JS"><input type="radio" name="formulario_linguagem" id="formulario_linguagem_JS">JavaScript</label>
+                    <label for="formulario_linguagem_HC"><input type="radio" name="formulario_linguagem" id="formulario_linguagem_HC">HTML e CSS</label>
+                </fieldset>
+                <fieldset class="formulario_grupos">
+                    <legend> Período de Estudo </legend>
+                    <select name="periodo" id="campo_periodo">
+                        <option value="m">Manhã &#x1F307;</option>
+                        <option value="t">Tarde &#x1F31E;</option>
+                        <option value="n">Noite &#x1F303;</option>
+                    </select>
+                </fieldset>
+                <label class="formulario_contrato" for="formulario_contrato"><input type="checkbox" name="formulario_contrato" id="formulario_contrato" checked disabled>Aceito abdicar de todos os meus dados, inclusive minha alma, para que a empresa os utilize como quiser.</label>
+                <input class="formulario_enviar" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#9904; Todos os direitos reservados. &#9760;</p>
+    </footer>
+</body>
+</html>
